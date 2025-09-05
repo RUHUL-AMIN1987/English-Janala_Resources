@@ -44,15 +44,15 @@ const displayWordDetails = (word) =>{
   detailBox.innerHTML = `
    <div>
       <h2 class="font-bold text-2xl">${word.word} (<i class="fa-solid fa-microphone-lines"></i>:${word.meaning})</h2>
-        <h2 class="font-semi-bold text-2xxl">${word.pronunciation}</h2>
-        <h2 class="font-semi-bold text-2xxl">আগ্রহী</h2>
+        <h2 class="font-bold text-2xl">${word.pronunciation}</h2>
+        <h2 class="font-bangla font-semi-bold text-2xl">${word.meaning}</h2>
       </div>
       <div>
         <h2 class="font-semi-bold text-2xl">Example</h2>
         <h2 class="font-semi-bold text-2xxl">${word.sentence}</h2>
       </div>
       <div>
-        <h2 class="font-semi-bold text-2xl">সমার্থক শব্দ গুলো</h2>
+        <h2 class="font-semi-bold text-2xl font-bangla">সমার্থক শব্দ গুলো</h2>
         <div>${createElement(word.synonyms)}</div> 
       </div>
   
